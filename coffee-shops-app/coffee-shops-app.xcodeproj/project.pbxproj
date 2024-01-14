@@ -1,0 +1,811 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		98BE639468FECB8125134B6D /* Pods_coffee_shops_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A3CFD6CA2911DE747A6D1D1 /* Pods_coffee_shops_app.framework */; };
+		E50128DB2B512746004D9976 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50128DA2B512746004D9976 /* KeychainService.swift */; };
+		E50128DF2B51288E004D9976 /* AuthTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50128DE2B51288E004D9976 /* AuthTarget.swift */; };
+		E50128E12B512908004D9976 /* CoffeeShopTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50128E02B512908004D9976 /* CoffeeShopTarget.swift */; };
+		E51A56552B5133430001E405 /* TokenService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51A56542B5133430001E405 /* TokenService.swift */; };
+		E51A56582B5134360001E405 /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51A56562B5134360001E405 /* Strings+Generated.swift */; };
+		E51A56592B5134370001E405 /* XCAssets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51A56572B5134360001E405 /* XCAssets+Generated.swift */; };
+		E51A56632B5139990001E405 /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51A56622B5139990001E405 /* AuthResponse.swift */; };
+		E544806A2B53CA29003646CA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54480692B53CA29003646CA /* LoginView.swift */; };
+		E544806C2B53CA3C003646CA /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E544806B2B53CA3C003646CA /* LoginInteractor.swift */; };
+		E544806E2B53CA49003646CA /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E544806D2B53CA49003646CA /* LoginPresenter.swift */; };
+		E54480702B53CA55003646CA /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E544806F2B53CA55003646CA /* LoginRouter.swift */; };
+		E54480722B53CA61003646CA /* LoginModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54480712B53CA61003646CA /* LoginModuleBuilder.swift */; };
+		E54480742B53CB9C003646CA /* BaseTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54480732B53CB9C003646CA /* BaseTextField.swift */; };
+		E54480882B53FA3D003646CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E54480862B53FA3D003646CA /* LaunchScreen.storyboard */; };
+		E544808F2B54008D003646CA /* SF-UI-Display-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E544808B2B54008C003646CA /* SF-UI-Display-Semibold.ttf */; };
+		E54480902B54008D003646CA /* SF-UI-Display-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E544808C2B54008C003646CA /* SF-UI-Display-Regular.ttf */; };
+		E54480912B54008D003646CA /* SF-UI-Display-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E544808D2B54008D003646CA /* SF-UI-Display-Bold.ttf */; };
+		E54480922B54008D003646CA /* SF-UI-Display-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E544808E2B54008D003646CA /* SF-UI-Display-Medium.ttf */; };
+		E54480972B5468D7003646CA /* MapObjectTapListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54480962B5468D7003646CA /* MapObjectTapListener.swift */; };
+		E55DD0822B508B6C004CFA67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55DD0812B508B6C004CFA67 /* AppDelegate.swift */; };
+		E55DD0842B508B6C004CFA67 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55DD0832B508B6C004CFA67 /* SceneDelegate.swift */; };
+		E55DD08B2B508B6E004CFA67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E55DD08A2B508B6E004CFA67 /* Assets.xcassets */; };
+		E55DD0992B508F8D004CFA67 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E55DD0982B508F8D004CFA67 /* Localizable.strings */; };
+		E55DD0A92B509299004CFA67 /* CoffeeShopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55DD0A82B509299004CFA67 /* CoffeeShopCell.swift */; };
+		E55DD0AC2B5092EF004CFA67 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55DD0AB2B5092EF004CFA67 /* ProductCell.swift */; };
+		E598857E2B529472002818D3 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E598857D2B529472002818D3 /* AuthService.swift */; };
+		E59885802B529483002818D3 /* CoffeeShopService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E598857F2B529483002818D3 /* CoffeeShopService.swift */; };
+		E59885862B529B66002818D3 /* CoffeeShopListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59885852B529B66002818D3 /* CoffeeShopListPresenter.swift */; };
+		E59885882B529B7A002818D3 /* CoffeeShopListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59885872B529B7A002818D3 /* CoffeeShopListRouter.swift */; };
+		E598858A2B529B8D002818D3 /* CoffeeShopListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59885892B529B8D002818D3 /* CoffeeShopListInteractor.swift */; };
+		E598858C2B529FD3002818D3 /* CoffeeShopsMapRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E598858B2B529FD3002818D3 /* CoffeeShopsMapRouter.swift */; };
+		E598858F2B529FEF002818D3 /* CoffeeShopsMapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E598858E2B529FEF002818D3 /* CoffeeShopsMapPresenter.swift */; };
+		E59885912B52A022002818D3 /* CoffeeShopsMapInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59885902B52A022002818D3 /* CoffeeShopsMapInteractor.swift */; };
+		E59885932B52A079002818D3 /* CoffeeShopsMapModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59885922B52A079002818D3 /* CoffeeShopsMapModuleBuilder.swift */; };
+		E59885952B52C5BF002818D3 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59885942B52C5BF002818D3 /* NetworkError.swift */; };
+		E59885992B52D3DC002818D3 /* RegistrationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59885982B52D3DC002818D3 /* RegistrationInteractor.swift */; };
+		E598859B2B52D3F0002818D3 /* RegistrationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E598859A2B52D3F0002818D3 /* RegistrationPresenter.swift */; };
+		E598859D2B52D3FA002818D3 /* RegistrationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E598859C2B52D3FA002818D3 /* RegistrationRouter.swift */; };
+		E598859F2B52D409002818D3 /* RegistrationModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E598859E2B52D409002818D3 /* RegistrationModuleBuilder.swift */; };
+		E59885A12B52F350002818D3 /* CoffeeShopListModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59885A02B52F350002818D3 /* CoffeeShopListModuleBuilder.swift */; };
+		E5B7C52C2B53101C001886D8 /* MenuInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B7C52B2B53101B001886D8 /* MenuInteractor.swift */; };
+		E5B7C52E2B531029001886D8 /* MenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B7C52D2B531029001886D8 /* MenuPresenter.swift */; };
+		E5B7C5302B531035001886D8 /* MenuRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B7C52F2B531035001886D8 /* MenuRouter.swift */; };
+		E5B7C5322B531043001886D8 /* MenuModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B7C5312B531043001886D8 /* MenuModuleBuilder.swift */; };
+		E5B7C5342B53107E001886D8 /* OrderInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B7C5332B53107E001886D8 /* OrderInteractor.swift */; };
+		E5B7C5362B53108C001886D8 /* OrderPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B7C5352B53108C001886D8 /* OrderPresenter.swift */; };
+		E5B7C5382B53109A001886D8 /* OrderRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B7C5372B53109A001886D8 /* OrderRouter.swift */; };
+		E5B7C53A2B5310AC001886D8 /* OrderModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B7C5392B5310AC001886D8 /* OrderModuleBuilder.swift */; };
+		E5F260AE2B51894F007C7402 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F260AD2B51894F007C7402 /* RegistrationView.swift */; };
+		E5F260B02B519DA2007C7402 /* CoffeeShop.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F260AF2B519DA2007C7402 /* CoffeeShop.swift */; };
+		E5F260B22B51A0AB007C7402 /* CoffeeShopListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F260B12B51A0AB007C7402 /* CoffeeShopListView.swift */; };
+		E5F260B42B51A8F0007C7402 /* CoffeeShopsMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F260B32B51A8F0007C7402 /* CoffeeShopsMapView.swift */; };
+		E5F260B62B51B172007C7402 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F260B52B51B172007C7402 /* LocationService.swift */; };
+		E5F260B82B51BF67007C7402 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F260B72B51BF67007C7402 /* MenuItem.swift */; };
+		E5F260BA2B51C237007C7402 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F260B92B51C237007C7402 /* MenuView.swift */; };
+		E5F260BD2B51C85B007C7402 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F260BC2B51C85B007C7402 /* OrderView.swift */; };
+		E5F260BF2B51C899007C7402 /* OrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F260BE2B51C899007C7402 /* OrderCell.swift */; };
+		E5F260C12B51C9AF007C7402 /* OrderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F260C02B51C9AF007C7402 /* OrderItem.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		408D4DA4183A624BFDBCDD35 /* Pods-coffee-shops-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-coffee-shops-app.release.xcconfig"; path = "Target Support Files/Pods-coffee-shops-app/Pods-coffee-shops-app.release.xcconfig"; sourceTree = "<group>"; };
+		7A3CFD6CA2911DE747A6D1D1 /* Pods_coffee_shops_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_coffee_shops_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		927CBA2C77AFE601B195601C /* Pods-coffee-shops-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-coffee-shops-app.debug.xcconfig"; path = "Target Support Files/Pods-coffee-shops-app/Pods-coffee-shops-app.debug.xcconfig"; sourceTree = "<group>"; };
+		E50128DA2B512746004D9976 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		E50128DE2B51288E004D9976 /* AuthTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTarget.swift; sourceTree = "<group>"; };
+		E50128E02B512908004D9976 /* CoffeeShopTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopTarget.swift; sourceTree = "<group>"; };
+		E51A56542B5133430001E405 /* TokenService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenService.swift; sourceTree = "<group>"; };
+		E51A56562B5134360001E405 /* Strings+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = "<group>"; };
+		E51A56572B5134360001E405 /* XCAssets+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCAssets+Generated.swift"; sourceTree = "<group>"; };
+		E51A56622B5139990001E405 /* AuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
+		E54480692B53CA29003646CA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		E544806B2B53CA3C003646CA /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		E544806D2B53CA49003646CA /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		E544806F2B53CA55003646CA /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		E54480712B53CA61003646CA /* LoginModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModuleBuilder.swift; sourceTree = "<group>"; };
+		E54480732B53CB9C003646CA /* BaseTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextField.swift; sourceTree = "<group>"; };
+		E54480872B53FA3D003646CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E544808B2B54008C003646CA /* SF-UI-Display-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Semibold.ttf"; sourceTree = "<group>"; };
+		E544808C2B54008C003646CA /* SF-UI-Display-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Regular.ttf"; sourceTree = "<group>"; };
+		E544808D2B54008D003646CA /* SF-UI-Display-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Bold.ttf"; sourceTree = "<group>"; };
+		E544808E2B54008D003646CA /* SF-UI-Display-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Medium.ttf"; sourceTree = "<group>"; };
+		E54480962B5468D7003646CA /* MapObjectTapListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapObjectTapListener.swift; sourceTree = "<group>"; };
+		E55DD07E2B508B6C004CFA67 /* coffee-shops-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "coffee-shops-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E55DD0812B508B6C004CFA67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E55DD0832B508B6C004CFA67 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E55DD08A2B508B6E004CFA67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E55DD08F2B508B6E004CFA67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E55DD0982B508F8D004CFA67 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		E55DD0A82B509299004CFA67 /* CoffeeShopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopCell.swift; sourceTree = "<group>"; };
+		E55DD0AB2B5092EF004CFA67 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		E598857D2B529472002818D3 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		E598857F2B529483002818D3 /* CoffeeShopService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopService.swift; sourceTree = "<group>"; };
+		E59885852B529B66002818D3 /* CoffeeShopListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopListPresenter.swift; sourceTree = "<group>"; };
+		E59885872B529B7A002818D3 /* CoffeeShopListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopListRouter.swift; sourceTree = "<group>"; };
+		E59885892B529B8D002818D3 /* CoffeeShopListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopListInteractor.swift; sourceTree = "<group>"; };
+		E598858B2B529FD3002818D3 /* CoffeeShopsMapRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopsMapRouter.swift; sourceTree = "<group>"; };
+		E598858E2B529FEF002818D3 /* CoffeeShopsMapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopsMapPresenter.swift; sourceTree = "<group>"; };
+		E59885902B52A022002818D3 /* CoffeeShopsMapInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopsMapInteractor.swift; sourceTree = "<group>"; };
+		E59885922B52A079002818D3 /* CoffeeShopsMapModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopsMapModuleBuilder.swift; sourceTree = "<group>"; };
+		E59885942B52C5BF002818D3 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		E59885982B52D3DC002818D3 /* RegistrationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationInteractor.swift; sourceTree = "<group>"; };
+		E598859A2B52D3F0002818D3 /* RegistrationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationPresenter.swift; sourceTree = "<group>"; };
+		E598859C2B52D3FA002818D3 /* RegistrationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationRouter.swift; sourceTree = "<group>"; };
+		E598859E2B52D409002818D3 /* RegistrationModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationModuleBuilder.swift; sourceTree = "<group>"; };
+		E59885A02B52F350002818D3 /* CoffeeShopListModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopListModuleBuilder.swift; sourceTree = "<group>"; };
+		E5B7C52B2B53101B001886D8 /* MenuInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuInteractor.swift; sourceTree = "<group>"; };
+		E5B7C52D2B531029001886D8 /* MenuPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPresenter.swift; sourceTree = "<group>"; };
+		E5B7C52F2B531035001886D8 /* MenuRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRouter.swift; sourceTree = "<group>"; };
+		E5B7C5312B531043001886D8 /* MenuModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuModuleBuilder.swift; sourceTree = "<group>"; };
+		E5B7C5332B53107E001886D8 /* OrderInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderInteractor.swift; sourceTree = "<group>"; };
+		E5B7C5352B53108C001886D8 /* OrderPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderPresenter.swift; sourceTree = "<group>"; };
+		E5B7C5372B53109A001886D8 /* OrderRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderRouter.swift; sourceTree = "<group>"; };
+		E5B7C5392B5310AC001886D8 /* OrderModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderModuleBuilder.swift; sourceTree = "<group>"; };
+		E5F260AD2B51894F007C7402 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		E5F260AF2B519DA2007C7402 /* CoffeeShop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShop.swift; sourceTree = "<group>"; };
+		E5F260B12B51A0AB007C7402 /* CoffeeShopListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopListView.swift; sourceTree = "<group>"; };
+		E5F260B32B51A8F0007C7402 /* CoffeeShopsMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopsMapView.swift; sourceTree = "<group>"; };
+		E5F260B52B51B172007C7402 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		E5F260B72B51BF67007C7402 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		E5F260B92B51C237007C7402 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		E5F260BC2B51C85B007C7402 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		E5F260BE2B51C899007C7402 /* OrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCell.swift; sourceTree = "<group>"; };
+		E5F260C02B51C9AF007C7402 /* OrderItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderItem.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E55DD07B2B508B6B004CFA67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98BE639468FECB8125134B6D /* Pods_coffee_shops_app.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		73FB7BBAEDE753E8532DF9B2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				927CBA2C77AFE601B195601C /* Pods-coffee-shops-app.debug.xcconfig */,
+				408D4DA4183A624BFDBCDD35 /* Pods-coffee-shops-app.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CBCC001CA6BC681075CF35BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A3CFD6CA2911DE747A6D1D1 /* Pods_coffee_shops_app.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E54480672B53C69B003646CA /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E54480892B53FADB003646CA /* View */,
+				E54480692B53CA29003646CA /* LoginView.swift */,
+				E544806B2B53CA3C003646CA /* LoginInteractor.swift */,
+				E544806D2B53CA49003646CA /* LoginPresenter.swift */,
+				E544806F2B53CA55003646CA /* LoginRouter.swift */,
+				E54480712B53CA61003646CA /* LoginModuleBuilder.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		E54480892B53FADB003646CA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E54480732B53CB9C003646CA /* BaseTextField.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E544808A2B54004B003646CA /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E544808D2B54008D003646CA /* SF-UI-Display-Bold.ttf */,
+				E544808E2B54008D003646CA /* SF-UI-Display-Medium.ttf */,
+				E544808C2B54008C003646CA /* SF-UI-Display-Regular.ttf */,
+				E544808B2B54008C003646CA /* SF-UI-Display-Semibold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		E55DD0752B508B6B004CFA67 = {
+			isa = PBXGroup;
+			children = (
+				E55DD0802B508B6C004CFA67 /* coffee-shops-app */,
+				E55DD07F2B508B6C004CFA67 /* Products */,
+				73FB7BBAEDE753E8532DF9B2 /* Pods */,
+				CBCC001CA6BC681075CF35BA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E55DD07F2B508B6C004CFA67 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E55DD07E2B508B6C004CFA67 /* coffee-shops-app.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E55DD0802B508B6C004CFA67 /* coffee-shops-app */ = {
+			isa = PBXGroup;
+			children = (
+				E55DD0AD2B50931C004CFA67 /* Models */,
+				E55DD09B2B509169004CFA67 /* Services */,
+				E55DD09A2B509162004CFA67 /* Modules */,
+				E55DD0972B508EDD004CFA67 /* Resources */,
+				E55DD08F2B508B6E004CFA67 /* Info.plist */,
+				E55DD0962B508EC2004CFA67 /* App */,
+			);
+			path = "coffee-shops-app";
+			sourceTree = "<group>";
+		};
+		E55DD0962B508EC2004CFA67 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E55DD0812B508B6C004CFA67 /* AppDelegate.swift */,
+				E55DD0832B508B6C004CFA67 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E55DD0972B508EDD004CFA67 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E544808A2B54004B003646CA /* Fonts */,
+				E54480862B53FA3D003646CA /* LaunchScreen.storyboard */,
+				E51A56562B5134360001E405 /* Strings+Generated.swift */,
+				E51A56572B5134360001E405 /* XCAssets+Generated.swift */,
+				E55DD08A2B508B6E004CFA67 /* Assets.xcassets */,
+				E55DD0982B508F8D004CFA67 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E55DD09A2B509162004CFA67 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				E54480672B53C69B003646CA /* Login */,
+				E55DD0A12B5091B7004CFA67 /* Order */,
+				E55DD0A02B5091AB004CFA67 /* CoffeeShopsMap */,
+				E55DD09F2B50919E004CFA67 /* CoffeeShopsList */,
+				E55DD09E2B509196004CFA67 /* Menu */,
+				E55DD09C2B509172004CFA67 /* Registration */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		E55DD09B2B509169004CFA67 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E59885822B52984F002818D3 /* Network */,
+				E50128DA2B512746004D9976 /* KeychainService.swift */,
+				E51A56542B5133430001E405 /* TokenService.swift */,
+				E598857D2B529472002818D3 /* AuthService.swift */,
+				E598857F2B529483002818D3 /* CoffeeShopService.swift */,
+				E5F260B52B51B172007C7402 /* LocationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E55DD09C2B509172004CFA67 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				E5F260AD2B51894F007C7402 /* RegistrationView.swift */,
+				E59885982B52D3DC002818D3 /* RegistrationInteractor.swift */,
+				E598859A2B52D3F0002818D3 /* RegistrationPresenter.swift */,
+				E598859C2B52D3FA002818D3 /* RegistrationRouter.swift */,
+				E598859E2B52D409002818D3 /* RegistrationModuleBuilder.swift */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		E55DD09E2B509196004CFA67 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				E55DD0AA2B5092CC004CFA67 /* View */,
+				E5F260B92B51C237007C7402 /* MenuView.swift */,
+				E5B7C52B2B53101B001886D8 /* MenuInteractor.swift */,
+				E5B7C52D2B531029001886D8 /* MenuPresenter.swift */,
+				E5B7C52F2B531035001886D8 /* MenuRouter.swift */,
+				E5B7C5312B531043001886D8 /* MenuModuleBuilder.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		E55DD09F2B50919E004CFA67 /* CoffeeShopsList */ = {
+			isa = PBXGroup;
+			children = (
+				E55DD0A72B509286004CFA67 /* View */,
+				E5F260B12B51A0AB007C7402 /* CoffeeShopListView.swift */,
+				E59885852B529B66002818D3 /* CoffeeShopListPresenter.swift */,
+				E59885872B529B7A002818D3 /* CoffeeShopListRouter.swift */,
+				E59885892B529B8D002818D3 /* CoffeeShopListInteractor.swift */,
+				E59885A02B52F350002818D3 /* CoffeeShopListModuleBuilder.swift */,
+			);
+			path = CoffeeShopsList;
+			sourceTree = "<group>";
+		};
+		E55DD0A02B5091AB004CFA67 /* CoffeeShopsMap */ = {
+			isa = PBXGroup;
+			children = (
+				E5F260B32B51A8F0007C7402 /* CoffeeShopsMapView.swift */,
+				E598858B2B529FD3002818D3 /* CoffeeShopsMapRouter.swift */,
+				E598858E2B529FEF002818D3 /* CoffeeShopsMapPresenter.swift */,
+				E59885902B52A022002818D3 /* CoffeeShopsMapInteractor.swift */,
+				E59885922B52A079002818D3 /* CoffeeShopsMapModuleBuilder.swift */,
+				E54480962B5468D7003646CA /* MapObjectTapListener.swift */,
+			);
+			path = CoffeeShopsMap;
+			sourceTree = "<group>";
+		};
+		E55DD0A12B5091B7004CFA67 /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				E5F260BB2B51C847007C7402 /* View */,
+				E5F260BC2B51C85B007C7402 /* OrderView.swift */,
+				E5B7C5332B53107E001886D8 /* OrderInteractor.swift */,
+				E5B7C5352B53108C001886D8 /* OrderPresenter.swift */,
+				E5B7C5372B53109A001886D8 /* OrderRouter.swift */,
+				E5B7C5392B5310AC001886D8 /* OrderModuleBuilder.swift */,
+			);
+			path = Order;
+			sourceTree = "<group>";
+		};
+		E55DD0A72B509286004CFA67 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E55DD0A82B509299004CFA67 /* CoffeeShopCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E55DD0AA2B5092CC004CFA67 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E55DD0AB2B5092EF004CFA67 /* ProductCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E55DD0AD2B50931C004CFA67 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E51A56622B5139990001E405 /* AuthResponse.swift */,
+				E5F260AF2B519DA2007C7402 /* CoffeeShop.swift */,
+				E5F260B72B51BF67007C7402 /* MenuItem.swift */,
+				E5F260C02B51C9AF007C7402 /* OrderItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E59885812B5297CF002818D3 /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				E50128DE2B51288E004D9976 /* AuthTarget.swift */,
+				E50128E02B512908004D9976 /* CoffeeShopTarget.swift */,
+			);
+			path = Targets;
+			sourceTree = "<group>";
+		};
+		E59885822B52984F002818D3 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E59885812B5297CF002818D3 /* Targets */,
+				E59885942B52C5BF002818D3 /* NetworkError.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E5F260BB2B51C847007C7402 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E5F260BE2B51C899007C7402 /* OrderCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E55DD07D2B508B6B004CFA67 /* coffee-shops-app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E55DD0922B508B6E004CFA67 /* Build configuration list for PBXNativeTarget "coffee-shops-app" */;
+			buildPhases = (
+				9FE6C02C1707B8461CE42A00 /* [CP] Check Pods Manifest.lock */,
+				E55DD07A2B508B6B004CFA67 /* Sources */,
+				E55DD07B2B508B6B004CFA67 /* Frameworks */,
+				E55DD07C2B508B6B004CFA67 /* Resources */,
+				02D50338E316C19EFCC38874 /* [CP] Embed Pods Frameworks */,
+				E55DD0952B508E66004CFA67 /* SwiftGen Script */,
+				EE0CE8754EC19CF9CCB21FAF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "coffee-shops-app";
+			productName = "coffee-shops-app";
+			productReference = E55DD07E2B508B6C004CFA67 /* coffee-shops-app.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E55DD0762B508B6B004CFA67 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					E55DD07D2B508B6B004CFA67 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = E55DD0792B508B6B004CFA67 /* Build configuration list for PBXProject "coffee-shops-app" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E55DD0752B508B6B004CFA67;
+			productRefGroup = E55DD07F2B508B6C004CFA67 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E55DD07D2B508B6B004CFA67 /* coffee-shops-app */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E55DD07C2B508B6B004CFA67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E54480922B54008D003646CA /* SF-UI-Display-Medium.ttf in Resources */,
+				E54480882B53FA3D003646CA /* LaunchScreen.storyboard in Resources */,
+				E544808F2B54008D003646CA /* SF-UI-Display-Semibold.ttf in Resources */,
+				E54480902B54008D003646CA /* SF-UI-Display-Regular.ttf in Resources */,
+				E55DD0992B508F8D004CFA67 /* Localizable.strings in Resources */,
+				E55DD08B2B508B6E004CFA67 /* Assets.xcassets in Resources */,
+				E54480912B54008D003646CA /* SF-UI-Display-Bold.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02D50338E316C19EFCC38874 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-coffee-shops-app/Pods-coffee-shops-app-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-coffee-shops-app/Pods-coffee-shops-app-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-coffee-shops-app/Pods-coffee-shops-app-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FE6C02C1707B8461CE42A00 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-coffee-shops-app-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E55DD0952B508E66004CFA67 /* SwiftGen Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "SwiftGen Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftgen >/dev/null; then\n  swiftgen\nelse\n  echo \"warning: SwiftGen not installed, download it from https://github.com/SwiftGen/SwiftGen\"\nfi\n";
+		};
+		EE0CE8754EC19CF9CCB21FAF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-coffee-shops-app/Pods-coffee-shops-app-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-coffee-shops-app/Pods-coffee-shops-app-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-coffee-shops-app/Pods-coffee-shops-app-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E55DD07A2B508B6B004CFA67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E544806E2B53CA49003646CA /* LoginPresenter.swift in Sources */,
+				E5B7C5382B53109A001886D8 /* OrderRouter.swift in Sources */,
+				E54480972B5468D7003646CA /* MapObjectTapListener.swift in Sources */,
+				E598859B2B52D3F0002818D3 /* RegistrationPresenter.swift in Sources */,
+				E54480722B53CA61003646CA /* LoginModuleBuilder.swift in Sources */,
+				E5F260BD2B51C85B007C7402 /* OrderView.swift in Sources */,
+				E5F260B02B519DA2007C7402 /* CoffeeShop.swift in Sources */,
+				E544806A2B53CA29003646CA /* LoginView.swift in Sources */,
+				E598858F2B529FEF002818D3 /* CoffeeShopsMapPresenter.swift in Sources */,
+				E59885A12B52F350002818D3 /* CoffeeShopListModuleBuilder.swift in Sources */,
+				E5B7C5342B53107E001886D8 /* OrderInteractor.swift in Sources */,
+				E5F260B62B51B172007C7402 /* LocationService.swift in Sources */,
+				E5B7C52E2B531029001886D8 /* MenuPresenter.swift in Sources */,
+				E55DD0822B508B6C004CFA67 /* AppDelegate.swift in Sources */,
+				E59885932B52A079002818D3 /* CoffeeShopsMapModuleBuilder.swift in Sources */,
+				E5F260B42B51A8F0007C7402 /* CoffeeShopsMapView.swift in Sources */,
+				E598859F2B52D409002818D3 /* RegistrationModuleBuilder.swift in Sources */,
+				E59885952B52C5BF002818D3 /* NetworkError.swift in Sources */,
+				E5F260C12B51C9AF007C7402 /* OrderItem.swift in Sources */,
+				E51A56552B5133430001E405 /* TokenService.swift in Sources */,
+				E598857E2B529472002818D3 /* AuthService.swift in Sources */,
+				E50128E12B512908004D9976 /* CoffeeShopTarget.swift in Sources */,
+				E5F260BA2B51C237007C7402 /* MenuView.swift in Sources */,
+				E59885912B52A022002818D3 /* CoffeeShopsMapInteractor.swift in Sources */,
+				E5B7C5322B531043001886D8 /* MenuModuleBuilder.swift in Sources */,
+				E598858C2B529FD3002818D3 /* CoffeeShopsMapRouter.swift in Sources */,
+				E59885862B529B66002818D3 /* CoffeeShopListPresenter.swift in Sources */,
+				E51A56592B5134370001E405 /* XCAssets+Generated.swift in Sources */,
+				E5F260BF2B51C899007C7402 /* OrderCell.swift in Sources */,
+				E55DD0A92B509299004CFA67 /* CoffeeShopCell.swift in Sources */,
+				E51A56632B5139990001E405 /* AuthResponse.swift in Sources */,
+				E50128DF2B51288E004D9976 /* AuthTarget.swift in Sources */,
+				E5F260B22B51A0AB007C7402 /* CoffeeShopListView.swift in Sources */,
+				E544806C2B53CA3C003646CA /* LoginInteractor.swift in Sources */,
+				E50128DB2B512746004D9976 /* KeychainService.swift in Sources */,
+				E5B7C52C2B53101C001886D8 /* MenuInteractor.swift in Sources */,
+				E5F260AE2B51894F007C7402 /* RegistrationView.swift in Sources */,
+				E59885882B529B7A002818D3 /* CoffeeShopListRouter.swift in Sources */,
+				E59885992B52D3DC002818D3 /* RegistrationInteractor.swift in Sources */,
+				E55DD0AC2B5092EF004CFA67 /* ProductCell.swift in Sources */,
+				E598859D2B52D3FA002818D3 /* RegistrationRouter.swift in Sources */,
+				E54480702B53CA55003646CA /* LoginRouter.swift in Sources */,
+				E5B7C53A2B5310AC001886D8 /* OrderModuleBuilder.swift in Sources */,
+				E51A56582B5134360001E405 /* Strings+Generated.swift in Sources */,
+				E59885802B529483002818D3 /* CoffeeShopService.swift in Sources */,
+				E54480742B53CB9C003646CA /* BaseTextField.swift in Sources */,
+				E5B7C5302B531035001886D8 /* MenuRouter.swift in Sources */,
+				E5F260B82B51BF67007C7402 /* MenuItem.swift in Sources */,
+				E5B7C5362B53108C001886D8 /* OrderPresenter.swift in Sources */,
+				E598858A2B529B8D002818D3 /* CoffeeShopListInteractor.swift in Sources */,
+				E55DD0842B508B6C004CFA67 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E54480862B53FA3D003646CA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E54480872B53FA3D003646CA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E55DD0902B508B6E004CFA67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E55DD0912B508B6E004CFA67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E55DD0932B508B6E004CFA67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 927CBA2C77AFE601B195601C /* Pods-coffee-shops-app.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "coffee-shops-app/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "evelina.coffee-shops-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E55DD0942B508B6E004CFA67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 408D4DA4183A624BFDBCDD35 /* Pods-coffee-shops-app.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "coffee-shops-app/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "evelina.coffee-shops-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E55DD0792B508B6B004CFA67 /* Build configuration list for PBXProject "coffee-shops-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E55DD0902B508B6E004CFA67 /* Debug */,
+				E55DD0912B508B6E004CFA67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E55DD0922B508B6E004CFA67 /* Build configuration list for PBXNativeTarget "coffee-shops-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E55DD0932B508B6E004CFA67 /* Debug */,
+				E55DD0942B508B6E004CFA67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E55DD0762B508B6B004CFA67 /* Project object */;
+}

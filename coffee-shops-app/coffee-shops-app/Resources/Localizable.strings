@@ -1,0 +1,33 @@
+/* 
+  Localizable.strings
+  coffee-shops-app
+
+  Created by Evelina on 12.01.2024.
+  
+*/
+
+"registraion.title" = "Регистрация";
+"registraion.email" = "Email";
+"registraion.password" = "Пароль";
+"registraion.repeate_password" = "Повторите пароль";
+
+
+"login.title" = "Вход";
+"login.login" = "Войти";
+
+
+"coffee_shop_list.title" = "Ближайшие кофейни";
+"coffee_shop_list.from_you" = " км от вас";
+"coffee_shop_list.on_map" = "На карте";
+
+
+"coffee_shop_map.title" = "Карта";
+
+
+"menu.title" = "Меню";
+"menu.to_order" = "Перейти к оплате";
+
+
+"order.title" = "Ваш заказ";
+"order.status" = "Время ожидания заказа 15 минут! \nСпасибо, что выбрали нас!";
+"order.pay" = "Оплатить";
