@@ -9,6 +9,7 @@
 - Moya
 - SwiftGen
 - SnapKit
+- CoreLocation
 
 ### Скринкаст
 
